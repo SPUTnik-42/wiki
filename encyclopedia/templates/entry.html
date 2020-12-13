@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ entryTitle }}
+{% endblock %}
+
+{% block body %}
+
+    {{ entry|safe }}
+
+    <button type="submit"><a href="edit_page/{{ entryTitle }}">Edit</a></button>
+
+
+{% endblock %}
